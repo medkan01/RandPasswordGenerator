@@ -23,10 +23,3 @@ layout = [
 ]
 
 windows = sg.Window("Password creator", layout, background_color="#161b22")
-
-while True:
-    event, values = windows.read()
-    if event == "Close" or event == sg.WINDOW_CLOSED:
-        break
-
-windows.close()
