@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Password Generator</h1>
+
+        <div class="password-display">
+            <input type="text" id="password" readonly placeholder="Click Generate">
+            <button id="copy-btn" title="Copy to clipboard">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="options">
+            <div class="option-group">
+                <label for="length">Password Length</label>
+                <div class="length-control">
+                    <input type="range" id="length" min="4" max="64" value="16">
+                    <span id="length-value">16</span>
+                </div>
+            </div>
+
+            <div class="checkboxes">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="lowercase" checked>
+                    <span>Lowercase (a-z)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="uppercase">
+                    <span>Uppercase (A-Z)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="numbers">
+                    <span>Numbers (0-9)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="symbols">
+                    <span>Symbols (!@#$...)</span>
+                </label>
+            </div>
+        </div>
+
+        <button id="generate-btn">Generate Password</button>
+
+        <footer>
+            <p>Secure random passwords generated server-side</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
