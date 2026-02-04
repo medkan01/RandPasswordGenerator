@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Desktop app (not needed for web)
+Model/
+View/
+Controller/
+main.py
+
+# Misc
+*.md
+*.txt
+!requirements.txt
+.DS_Store
+Thumbs.db
